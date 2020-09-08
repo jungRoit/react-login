@@ -4,6 +4,7 @@ import FormInput from '../../ components/FormInput';
 import {userIcon, emailIcon, lockIcon} from '../../config/image';
 import {validatePassword} from '../../utils/validators';
 import * as ApiService from '../../services/api';
+import {emailValidation, signUp} from '../../config/url';
 
 
 class SignUp extends React.Component {
@@ -50,7 +51,7 @@ class SignUp extends React.Component {
             email: this.state.email
           }
          }
-        const emailValidationResponse = await ApiService.post('https://api.raisely.com/v3/check-user',emailValidationBody);
+        const emailValidationResponse = await ApiService.post(emailValidation,emailValidationBody);
         if(emailValidationResponse.data.data.status === 'EXISTS') {
           this.setState({errorMessage: 'Email Already exists. Please use a new Email.'});
           return;
@@ -65,7 +66,7 @@ class SignUp extends React.Component {
             password: this.state.password
           }
          }
-        const response = await ApiService.post('https://api.raisely.com/v3/signup',signUpBody);
+        const response = await ApiService.post(signUp,signUpBody);
       } catch (error) {
         this.setState({errorMessage:error});
       }
