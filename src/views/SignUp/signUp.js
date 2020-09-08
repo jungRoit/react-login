@@ -18,7 +18,7 @@ signupHandler = () => {
       <div className="container">
         <div className="sign-up-box">
           <div className="signup-box-header">
-            <h1 className="sign-box-header-title">Sign Up</h1>
+            <h1 className="sign-box-header-title">Register with Us</h1>
           </div>
           <div  className="signup-box-form">
           <form className="sign-up-form" onSubmit={this.signupHandler}>
@@ -40,7 +40,7 @@ signupHandler = () => {
             </div>
             <div className="form-buttons">
             <Button type="submit" text={"Sign up"}></Button>
-            <p>Already have an Account? <a href="#"> Sign In</a></p>
+            <p>Already have an Account? <a href="#" className="link"> Sign In</a></p>
             </div>
           </form>
           </div>

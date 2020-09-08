@@ -75,3 +75,9 @@
   padding-top: 24px;
   flex-direction: column;
 }
+
+.link {
+  text-decoration: none;
+  color: #B19928;
+  font-size: 16px;
+}
