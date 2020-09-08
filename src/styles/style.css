@@ -42,31 +42,6 @@
   flex-direction: column;
 }
 
-.form-element {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  padding: 16px 0px;
-
-}
-
-.form-element-label {
-  font-size: 12px;
-  color: #52575d;
-  font-weight: lighter;
-}
-
-.form-element-submit {
-  font-size: 18px;
-  color: #52575d;
-  border: none;
-  border-bottom: 1px solid #fddb3a;
-}
-
-.form-element-submit:focus {
-  outline: none;
-}
-
 .form-buttons {
   display: flex;
   flex: 1;

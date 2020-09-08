@@ -1,0 +1,39 @@
+.form-element {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 16px 0px;
+
+}
+
+.form-element-label {
+  font-size: 12px;
+  color: #52575d;
+  font-weight: lighter;
+}
+
+.form-element-input {
+  display: flex;
+  font-size: 18px;
+  color: #41444b;
+  border:none;
+  flex: 1;
+}
+
+.form-element-input-wrapper {
+  display: flex;
+  border: none;
+  border-bottom: 1px solid #fddb3a;
+  flex-direction: row;
+}
+
+.form-element-input:focus {
+  outline: none;
+}
+
+.form-input-icon {
+  height: 16px;
+  width: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
